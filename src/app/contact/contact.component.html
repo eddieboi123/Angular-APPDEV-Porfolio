@@ -6,31 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-        <div class="contact-container">
-                <h2>Contact Us</h2>
+<body class="bg-light">
+
+  <div class="container py-5 mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+
+        <div class="card shadow-lg border-0 rounded-3">
+          <div class="card-body p-4">
+            
+            <h2 class="text-center mb-3">Contact Us</h2>
+            <p class="text-center text-muted mb-4">
+              If you have any questions or feedback, feel free to reach out to us:
+            </p>
+
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
               
-                <p>If you have any questions or feedback, feel free to reach out to us:</p>
-              
-                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                  <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Your full name" />
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required placeholder="Your email address" />
-                  </div>
-              
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required placeholder="Your message"></textarea>
-                  </div>
-              
-                  <button type="submit">Send Message</button>
-                </form>
+ 
+              <div class="mb-3">
+                <label for="name" class="form-label fw-bold">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
               </div>
-              
+
+
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your email address" required>
+              </div>
+
+
+              <div class="mb-3">
+                <label for="message" class="form-label fw-bold">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+              </div>
+
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success btn-lg">Send Message</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+          <footer class="text-center bg-dark text-white p-3 fixed-bottom">
+          <p class="mb-0">© 2025 My website. All rights reserved.</p>
+        </footer>    
 </body>
 </html>
